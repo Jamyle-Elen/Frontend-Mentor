@@ -1,0 +1,131 @@
+/*- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url(https://fonts.google.com/specimen/Montserrat);
+}
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.all {
+    display: flex;
+}
+
+.img {
+    width: 300px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0px 30px 5px 30px;
+    background: #fff;
+}
+
+.info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 10;
+    letter-spacing: 8px;
+    font-size: 12px;
+    margin-top: 40px;
+    color: rgb(102, 99, 99);
+}
+
+.info .produto {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.info .info-produto {
+    margin-bottom: 20px;
+    color: rgb(80, 78, 78);
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.value h1 {
+    color: rgb(40, 110, 93);
+    padding-right: 15px;
+}
+
+.shoppcart {
+    background-color: rgb(40, 110, 93); /*rgb(71, 133, 118)*/
+    border-radius: 15px;
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.shoppcart .icon {
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+    .all .mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .all .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .all .desktop {
+        display: none;
+    }
+    
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .produto {
+        margin-bottom: 15px;
+    }
+
+    .info h3 {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .value {
+        margin-bottom: 15px;
+    }
+
+    .info .info-produto {
+        margin-bottom: 15px;
+        color: rgb(80, 78, 78);
+    }
+
+    .shoppcart {
+        margin-bottom: 17px;
+    }
+}
