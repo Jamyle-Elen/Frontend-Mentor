@@ -79,7 +79,18 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
 
+.attribution {
+    margin-top: 8px;
+}
+
+.attribution a {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(77, 73, 73);
 }
 
 .shoppcart .icon {
